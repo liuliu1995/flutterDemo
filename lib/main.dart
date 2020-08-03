@@ -15,10 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
-      initialRoute: '/',
-      routes: {
-        '/details': (context) => DetailsWidget(),
-      },
+      initialRoute: '/'
     );
   }
 }
@@ -42,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items:[
           BottomNavigationBarItem(icon:Icon(Icons.home),title:Text('首页')),
-          BottomNavigationBarItem(icon:Icon(Icons.people),title:Text('我的'))
+          BottomNavigationBarItem(icon:Icon(Icons.person),title:Text('我的'))
         ],
         currentIndex: _selectedIndex,//默认选中
         fixedColor: Colors.blue,
